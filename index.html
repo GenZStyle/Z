@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen.Z Style - تي شيرتات شبابية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- الشريط العلوي -->
+    <header>
+        <div class="container">
+            <!-- إضافة اللوجو -->
+            <a href="#home" class="logo">
+                <img src="logo.png" alt="Gen.Z Style Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section id="home">
+        <div class="container">
+            <h2>مرحبًا بكم في Gen.Z Style</h2>
+            <p>اكتشف أحدث صيحات الموضة الشبابية مع تيشيرتاتنا الفريدة!</p>
+            <a href="#products" class="btn">تصفح المنتجات</a>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section id="products">
+        <div class="container">
+            <h2>منتجاتنا</h2>
+            <div class="product-grid">
+                <!-- منتج 1 -->
+                <div class="product-item">
+                    <img src="product1.jpg" alt="تيشيرت 1">
+                    <h3>تيشيرت رياضي</h3>
+                    <p>49.99 SR</p>
+                    <a href="#" class="btn add-to-cart" data-product="تيشيرت رياضي">إضافة إلى السلة</a>
+                </div>
+                <!-- منتج 2 -->
+                <div class="product-item">
+                    <img src="product2.jpg" alt="تيشيرت 2">
+                    <h3>تيشيرت كاجوال</h3>
+                    <p>59.99 SR</p>
+                    <a href="#" class="btn add-to-cart" data-product="تيشيرت كاجوال">إضافة إلى السلة</a>
+                </div>
+                <!-- منتج 3 -->
+                <div class="product-item">
+                    <img src="product3.jpg" alt="تيشيرت 3">
+                    <h3>تيشيرت كلاسيكي</h3>
+                    <p>69.99 SR</p>
+                    <a href="#" class="btn add-to-cart" data-product="تيشيرت كلاسيكي">إضافة إلى السلة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم سلة المشتريات -->
+    <section id="cart">
+        <div class="container">
+            <h2>سلة المشتريات</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout-btn" class="btn" onclick="sendOrder()">تأكيد الطلب</button>
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section id="about">
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>نحن في Gen.Z Style نسعى لتوفير أفضل تصاميم التيشرتات التي تعكس شخصيتك وتواكب أحدث صيحات الموضة.</p>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <form action="https://formspree.io/f/your-formspree-endpoint" method="POST">
+                <input type="text" name="name" placeholder="اسمك" required>
+                <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+                <textarea name="message" placeholder="رسالتك"></textarea>
+                <button type="submit" class="btn">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Gen.Z Style. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- ربط JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
