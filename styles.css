@@ -23,18 +23,19 @@ header {
     background: #000000; /* أسود */
     color: #FFD700; /* ذهبي */
     padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header .logo img {
-    max-width: 150px; /* حجم اللوجو */
+    max-width: 150px;
     height: auto;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 header nav ul li {
@@ -50,6 +51,11 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: white; /* أبيض عند التمرير */
+}
+
+.cart-btn {
+    background: #FFD700; /* ذهبي */
+    color: #000000; /* أسود */
 }
 
 /* Home Section */
@@ -154,22 +160,6 @@ header nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#checkout-btn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background: #000000; /* أسود */
-    color: #FFD700; /* ذهبي */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#checkout-btn:hover {
-    background: #FFD700; /* ذهبي */
-    color: #000000; /* أسود */
-}
-
 /* About Section */
 #about {
     padding: 50px 0;
@@ -207,6 +197,15 @@ footer {
     padding: 20px 0;
     background: #000000; /* أسود */
     color: #FFD700; /* ذهبي */
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
 }
 
 /* Responsive Design */
